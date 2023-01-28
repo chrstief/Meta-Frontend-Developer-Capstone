@@ -7,8 +7,10 @@ import Nav from './Nav';
 function App() {
   return (
     <>
-      <Header/>
-      <Nav/>
+      <div style={{margin:"1rem 0", display: "flex", justifyContent: "center",alignItems: "center",flexWrap: "wrap",gap: "1rem"}}>
+        <Header/>
+        <Nav/>
+      </div>
       <Main/>
       <Footer/>
     </>

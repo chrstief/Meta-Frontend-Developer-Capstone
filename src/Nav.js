@@ -1,26 +1,27 @@
 import React from 'react'
+import styles from './Nav.module.css';
 
 export default function Nav() {
   return (
     <nav>
-        <ul>
+        <ul className={styles.ul}>
             <li>
-                <a href='#Home'>Home</a>
+                <a className={styles.a} href='#Home'>Home</a>
             </li>
             <li>
-                <a href='#About'>About</a>
+                <a className={styles.a} href='#About'>About</a>
             </li>
             <li>
-                <a href='#Menu'>Menu</a>
+                <a className={styles.a} href='#Menu'>Menu</a>
             </li>
             <li>
-                <a href='#Reservations'>Reservations</a>
+                <a className={styles.a} href='#Reservations'>Reservations</a>
             </li>
             <li>
-                <a href='#Order_Online'>Order Online</a>
+                <a className={styles.a} href='#Order_Online'>Order Online</a>
             </li>
             <li>
-                <a href='#Login'>Login</a>
+                <a className={styles.a} href='#Login'>Login</a>
             </li>
         </ul>
     </nav>

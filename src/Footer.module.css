@@ -1,0 +1,15 @@
+.footer {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+}
+
+.ul {
+    list-style: none;
+}
+
+.a {
+text-decoration: none;
+color: #000;
+white-space: nowrap;
+}

@@ -1,36 +1,37 @@
 import React from 'react'
-import logo from './Logo.svg';
+import logoLarge from './LogoLarge.png';
+import styles from './Footer.module.css';
 
 export default function Footer() {
   return (
-    <footer>
-        <img src={logo} alt='Logo'/>
+    <footer className={styles.footer}>
+        <img src={logoLarge} alt='Logo'/>
         <div>
             <h3>Doormat Navigation</h3>
-            <ul>
+            <ul className={styles.ul}>
                 <li>
-                    <a href='#Home'>Home</a>
+                    <a className={styles.a} href='#Home'>Home</a>
                 </li>
                 <li>
-                    <a href='#About'>About</a>
+                    <a className={styles.a} href='#About'>About</a>
                 </li>
                 <li>
-                    <a href='#Menu'>Menu</a>
+                    <a className={styles.a} href='#Menu'>Menu</a>
                 </li>
                 <li>
-                    <a href='#Reservations'>Reservations</a>
+                    <a className={styles.a} href='#Reservations'>Reservations</a>
                 </li>
                 <li>
-                    <a href='#Order_Online'>Order Online</a>
+                    <a className={styles.a} href='#Order_Online'>Order Online</a>
                 </li>
                 <li>
-                    <a href='#Login'>Login</a>
+                    <a className={styles.a} href='#Login'>Login</a>
                 </li>
             </ul>
         </div>
         <div>
             <h3>Contact Details</h3>
-            <ul>
+            <ul className={styles.ul}>
                 <li>
                     Address
                 </li>
@@ -44,15 +45,15 @@ export default function Footer() {
         </div>
         <div>
             <h3>Social Media Links</h3>
-            <ul>
+            <ul className={styles.ul}>
                 <li>
-                    <a href='https://www.facebook.com/'>Facebook</a>
+                    <a className={styles.a} href='https://www.facebook.com/'>Facebook</a>
                 </li>
                 <li>
-                    <a href='https://www.instagram.com/'>Instagram</a>
+                    <a className={styles.a} href='https://www.instagram.com/'>Instagram</a>
                 </li>
                 <li>
-                    <a href='https://twitter.com/'>Twitter</a>
+                    <a className={styles.a} href='https://twitter.com/'>Twitter</a>
                 </li>
             </ul>
         </div>

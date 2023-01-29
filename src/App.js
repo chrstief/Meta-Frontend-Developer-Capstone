@@ -1,4 +1,4 @@
-import './App.css';
+import styles from './App.module.css';
 import Footer from './Footer';
 import Header from './Header';
 import Main from './Main';
@@ -6,14 +6,14 @@ import Nav from './Nav';
 
 function App() {
   return (
-    <>
-      <div style={{margin:"1rem 0", display: "flex", justifyContent: "center",alignItems: "center",flexWrap: "wrap",gap: "1rem"}}>
+    <div className={styles.app}>
+      <div className={styles.topbar}>
         <Header/>
         <Nav/>
       </div>
       <Main/>
       <Footer/>
-    </>
+    </div>
   );
 }
 

@@ -5,7 +5,7 @@ import styles from './Footer.module.css';
 export default function Footer() {
   return (
     <footer className={styles.footer}>
-        <img src={logoLarge} alt='Logo'/>
+        <img src={logoLarge} width='70px' alt='Logo'/>
         <div>
             <h3>Doormat Navigation</h3>
             <ul className={styles.ul}>

@@ -1,26 +1,27 @@
 import styles from './Nav.module.css';
+import { Link } from "react-router-dom";
 
 export default function Nav() {
   return (
     <nav>
         <ul className={styles.ul}>
             <li>
-                <a className={styles.a} href='#Home'>Home</a>
+                <Link className={styles.a} to="/">Home</Link>
             </li>
             <li>
-                <a className={styles.a} href='#About'>About</a>
+                <Link className={styles.a} to="/">About</Link>
             </li>
             <li>
-                <a className={styles.a} href='#Menu'>Menu</a>
+                <Link className={styles.a} to="/">Menu</Link>
             </li>
             <li>
-                <a className={styles.a} href='#Reservations'>Reservations</a>
+                <Link className={styles.a} to="/">Reservations</Link>
             </li>
             <li>
-                <a className={styles.a} href='#Order_Online'>Order Online</a>
+                <Link className={styles.a} to="/BookingPage">Order Online</Link>
             </li>
             <li>
-                <a className={styles.a} href='#Login'>Login</a>
+                <Link className={styles.a} to="/">Login</Link>
             </li>
         </ul>
     </nav>

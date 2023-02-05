@@ -1,7 +1,7 @@
 import styles from './App.module.css';
 import Footer from './Components/Footer/Footer';
 import Header from './Components/Header/Header';
-import Main from './Main';
+import Main from './Components/Main/Main';
 import Nav from './Components/Nav/Nav';
 
 function App() {

@@ -1,9 +1,7 @@
-import React from 'react'
 
-function Highlights() {
+
+export default function Highlights() {
   return (
     <div>Highlights</div>
   )
 }
-
-export default Highlights

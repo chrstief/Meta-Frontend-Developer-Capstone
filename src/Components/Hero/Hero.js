@@ -1,7 +1,6 @@
-import React from 'react'
 import RestaurantFood from '../../Assets/restauranfood.jpg'
 
-function Hero() {
+export default function Hero() {
   return (
     <section>
         <h1>Little Lemon</h1>
@@ -12,5 +11,3 @@ function Hero() {
     </section>
   )
 }
-
-export default Hero

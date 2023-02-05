@@ -1,4 +1,3 @@
-import React from 'react'
 import logoLarge from '../../Assets/LogoLarge.png';
 import styles from './Footer.module.css';
 

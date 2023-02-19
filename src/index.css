@@ -1,3 +1,8 @@
+:root {
+  --primary-color-green: #495e57;
+  --primary-color-yellow: #f4ce14;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,7 +12,68 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.displayTitle {
+  font-family: 'Markazi Text', serif;
+  font-weight: 500;
+  font-size: 64pt;
+}
+
+.subTitle {
+  font-family: 'Markazi Text', serif;
+  font-weight: 400;
+  font-size: 40pt;
+}
+
+/* Lead Text */
+.leadText {
+  font-family: 'Karla', sans-serif;
+  font-weight: 500; /* Medium */
+  font-size: 18pt;
+}
+
+/* Section Title */
+.sectionTitle {
+  font-family: 'Karla', sans-serif;
+  font-weight: 800; /* Extra Bold */
+  font-size: 16pt;
+}
+
+/* Card Title */
+.cardTitle {
+  font-family: 'Karla', sans-serif;
+  font-weight: bold;
+  font-size: 18pt;
+}
+
+/* Paragraph Text */
+.paragraphText {
+  font-family: 'Karla', sans-serif;
+  font-weight: normal; /* Regular */
+  font-size: 16pt;
+  /* line-height: 1.5; */
+  max-width: 65ch;
+}
+
+/* Highlight Text */
+.highlightText {
+  font-family: 'Karla', sans-serif;
+  font-weight: 500; /* Medium */
+  font-size: 16pt;
+}
+
+.button {
+  border-radius:16px;
+  background-color:var(--primary-color-yellow);
+  padding: .5em 1em;
+}
+
+.link {
+  text-decoration: none;
+  color: #000;
+  white-space: nowrap;
+}
+
+.container {
+  margin: auto;
+  max-width: 1068px;
 }

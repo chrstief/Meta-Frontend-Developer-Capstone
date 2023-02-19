@@ -6,22 +6,22 @@ export default function Nav() {
     <nav>
         <ul className={styles.ul}>
             <li>
-                <Link className={styles.a} to="/">Home</Link>
+                <Link className={`${styles.a} link link cardTitle`} to="/">Home</Link>
             </li>
             <li>
-                <Link className={styles.a} to="/">About</Link>
+                <Link className={`${styles.a} link cardTitle`} to="/">About</Link>
             </li>
             <li>
-                <Link className={styles.a} to="/">Menu</Link>
+                <Link className={`${styles.a} link cardTitle`} to="/">Menu</Link>
             </li>
             <li>
-                <Link className={styles.a} to="/">Reservations</Link>
+                <Link className={`${styles.a} link cardTitle`} to="/">Reservations</Link>
             </li>
             <li>
-                <Link className={styles.a} to="/BookingPage">Order Online</Link>
+                <Link className={`${styles.a} link cardTitle`} to="/BookingPage">Order Online</Link>
             </li>
             <li>
-                <Link className={styles.a} to="/">Login</Link>
+                <Link className={`${styles.a} link cardTitle`} to="/">Login</Link>
             </li>
         </ul>
     </nav>

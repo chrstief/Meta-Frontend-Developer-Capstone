@@ -13,7 +13,7 @@ export default function HomePage() {
         <Nav/>
       </div>
       <Main/>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   )
 }

@@ -1,5 +1,4 @@
-import { Routes, Route ,Link} from "react-router-dom";
-import Nav from "./Components/Nav/Nav";
+import { Routes, Route } from "react-router-dom";
 import BookingPage from "./Views/BookingPage/BookingPage";
 import HomePage from './Views/HomePage/HomePage';
 

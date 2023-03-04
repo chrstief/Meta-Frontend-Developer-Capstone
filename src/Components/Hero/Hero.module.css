@@ -1,0 +1,31 @@
+.heroBackground {
+  width: 100%;
+  background-color: var(--primary-color-green);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.heading {
+  color: var(--primary-color-yellow);
+}
+
+.subHeading {
+  color: white;
+}
+
+.text {
+  color: white;
+  padding: 16px 0;
+}
+
+.heroImage {
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  justify-self: end;
+  align-self: stretch;
+}

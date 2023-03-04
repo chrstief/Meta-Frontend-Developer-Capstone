@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Capstone Project for the Meta Frontend Developer Certificate
+
+https://www.coursera.org/learn/meta-front-end-developer-capstone
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

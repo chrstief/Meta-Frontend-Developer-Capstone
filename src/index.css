@@ -2,6 +2,10 @@
   --border-radius: 16px;
   --primary-color-green: #495e57;
   --primary-color-yellow: #f4ce14;
+  --secondary-color-orange: #ee9972;
+  --secondary-color-lightOrange: #fbdabb;
+  --secondary-color-grey: #edefee;
+  --secondary-color-black: #333333;
 }
 
 body {

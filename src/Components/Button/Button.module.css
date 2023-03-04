@@ -1,6 +1,6 @@
 .button {
     display:inline-block;
-    border-radius:16px;
+    border-radius:var(--border-radius);
     background-color:var(--primary-color-yellow);
     padding: .5em 1em;
   }

@@ -13,7 +13,7 @@ export default function Hero() {
           <Button to="/BookingPage">Reserve a Table</Button>
         </div>
         </div>
-        <img src={RestaurantFood} alt="Restaurant Food" style={{ aspectRatio:"1", objectFit:"cover", borderRadius:"16px", justifySelf:"end", alignSelf: "stretch"}}/>
+        <img src={RestaurantFood} alt="Restaurant Food" style={{ aspectRatio:"1", objectFit:"cover", borderRadius:"var(--border-radius)", justifySelf:"end", alignSelf: "stretch"}}/>
       </div>
     </section>
   )

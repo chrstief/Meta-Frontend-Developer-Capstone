@@ -1,4 +1,5 @@
 :root {
+  --border-radius: 16px;
   --primary-color-green: #495e57;
   --primary-color-yellow: #f4ce14;
 }

@@ -61,12 +61,6 @@ body {
   font-size: 16pt;
 }
 
-.button {
-  border-radius:16px;
-  background-color:var(--primary-color-yellow);
-  padding: .5em 1em;
-}
-
 .link {
   text-decoration: none;
   color: #000;

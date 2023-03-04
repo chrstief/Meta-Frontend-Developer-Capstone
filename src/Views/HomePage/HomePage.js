@@ -3,6 +3,7 @@ import Footer from '../../Components/Footer/Footer';
 import Header from '../../Components/Header/Header';
 import Main from '../../Components/Main/Main';
 import Nav from '../../Components/Nav/Nav';
+import Specials from '../../Components/Specials/Specials';
 
 
 export default function HomePage() {
@@ -13,6 +14,7 @@ export default function HomePage() {
         <Nav/>
       </div>
       <Main/>
+      <Specials/>
       {/* <Footer/> */}
     </div>
   )

@@ -17,3 +17,6 @@
     height: 70px;
     aspect-ratio: 1;
 }
+.rating{
+    color:var(--primary-color-yellow)
+}

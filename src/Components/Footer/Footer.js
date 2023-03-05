@@ -10,22 +10,22 @@ export default function Footer() {
             <h3>Doormat Navigation</h3>
             <ul className={styles.ul}>
             <li>
-                <Link className={`${styles.a} link link cardTitle`} to="/">Home</Link>
+                <Link className="link cardTitle" to="/">Home</Link>
             </li>
             <li>
-                <Link className={`${styles.a} link cardTitle`} to="/">About</Link>
+                <Link className="link cardTitle" to="/">About</Link>
             </li>
             <li>
-                <Link className={`${styles.a} link cardTitle`} to="/">Menu</Link>
+                <Link className="link cardTitle" to="/">Menu</Link>
             </li>
             <li>
-                <Link className={`${styles.a} link cardTitle`} to="/">Reservations</Link>
+                <Link className="link cardTitle" to="/">Reservations</Link>
             </li>
             <li>
-                <Link className={`${styles.a} link cardTitle`} to="/BookingPage">Order Online</Link>
+                <Link className="link cardTitle" to="/BookingPage">Order Online</Link>
             </li>
             <li>
-                <Link className={`${styles.a} link cardTitle`} to="/">Login</Link>
+                <Link className="link cardTitle" to="/">Login</Link>
             </li>
             </ul>
         </div>
@@ -47,13 +47,13 @@ export default function Footer() {
             <h3>Social Media Links</h3>
             <ul className={styles.ul}>
                 <li>
-                    <a className={styles.a} href='https://www.facebook.com/'>Facebook</a>
+                    <a className="link" href='https://www.facebook.com/'>Facebook</a>
                 </li>
                 <li>
-                    <a className={styles.a} href='https://www.instagram.com/'>Instagram</a>
+                    <a className="link" href='https://www.instagram.com/'>Instagram</a>
                 </li>
                 <li>
-                    <a className={styles.a} href='https://twitter.com/'>Twitter</a>
+                    <a className="link" href='https://twitter.com/'>Twitter</a>
                 </li>
             </ul>
         </div>

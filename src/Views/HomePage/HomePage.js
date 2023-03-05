@@ -4,7 +4,7 @@ import Header from '../../Components/Header/Header';
 import Main from '../../Components/Main/Main';
 import Nav from '../../Components/Nav/Nav';
 import Specials from '../../Components/Specials/Specials';
-
+import Testimonials from '../../Components/Testimonials/Testimonials';
 
 export default function HomePage() {
   return (
@@ -15,6 +15,7 @@ export default function HomePage() {
       </div>
       <Main/>
       <Specials/>
+      <Testimonials/>
       {/* <Footer/> */}
     </div>
   )

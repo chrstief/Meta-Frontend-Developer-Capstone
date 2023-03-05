@@ -9,7 +9,7 @@ export default function Specials() {
   return (
     <div className='container'>
       <div className={styles.flexbox}>
-        <h1 className="subTitle">This weeks specials!</h1>
+        <h1 className="sectionTitle">This weeks specials!</h1>
         <Button to="/">Online Menu</Button>
       </div>
       <div className={styles.grid}>

@@ -8,13 +8,13 @@ export default function Card(props) {
       <img src={props.image} alt={props.name} className={styles.cardImage} />
       <div className={styles.cardContent}>
         <div>
-          <h2 className={`cardTitle ${styles.cardTitle}`}>
+          <h2 className={`sectionCategories ${styles.cardTitle}`}>
             {props.name}
-            <span className={`cardTitle ${styles.cardPrice}`}>{props.price}</span>
+            <span className={`highlightText ${styles.cardPrice}`}>{props.price}</span>
           </h2>
           <p className='paragraphText'>{props.description}</p>
         </div>
-        <Link to="/" className={`cardTitle link ${styles.order}`}>
+        <Link to="/" className={`highlightText link ${styles.order}`}>
           <span>Order for delivery</span>
           <img src={basketIcon} alt="Basket" />
         </Link>

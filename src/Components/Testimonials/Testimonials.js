@@ -4,7 +4,7 @@ import styles from "./Testimonials.module.css"
 export default function Testimonials() {
   return (
     <div className={`container ${styles.container}`}>
-      <h1 className={`subTitle ${styles.heading}`}>Testimonials</h1>
+      <h1 className={`sectionTitle ${styles.heading}`}>Testimonials</h1>
       <div className={styles.grid}>
         <Testimonial image="https://i.pravatar.cc/150?img=10" name="Angela" rating="★★★★" description={`"Little Lemon has the best lemon chicken I've ever tasted!"`} />
         <Testimonial image="https://i.pravatar.cc/150?img=11" name="Hans" rating="★★★★★" description={`"The cozy atmosphere and friendly staff at Little Lemon make every visit feel like coming home."`} />

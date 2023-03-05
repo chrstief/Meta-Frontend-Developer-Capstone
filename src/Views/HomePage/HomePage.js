@@ -18,7 +18,7 @@ export default function HomePage() {
       <Specials/>
       <Testimonials/>
       <About/>
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   )
 }

@@ -1,31 +1,32 @@
 import logoLarge from '../../Assets/LogoLarge.png';
 import styles from './Footer.module.css';
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className={styles.footer}>
+    <footer className={`container ${styles.grid}`}>
         <img src={logoLarge} width='70px' alt='Logo'/>
         <div>
             <h3>Doormat Navigation</h3>
             <ul className={styles.ul}>
-                <li>
-                    <a className={styles.a} href='#Home'>Home</a>
-                </li>
-                <li>
-                    <a className={styles.a} href='#About'>About</a>
-                </li>
-                <li>
-                    <a className={styles.a} href='#Menu'>Menu</a>
-                </li>
-                <li>
-                    <a className={styles.a} href='#Reservations'>Reservations</a>
-                </li>
-                <li>
-                    <a className={styles.a} href='#Order_Online'>Order Online</a>
-                </li>
-                <li>
-                    <a className={styles.a} href='#Login'>Login</a>
-                </li>
+            <li>
+                <Link className={`${styles.a} link link cardTitle`} to="/">Home</Link>
+            </li>
+            <li>
+                <Link className={`${styles.a} link cardTitle`} to="/">About</Link>
+            </li>
+            <li>
+                <Link className={`${styles.a} link cardTitle`} to="/">Menu</Link>
+            </li>
+            <li>
+                <Link className={`${styles.a} link cardTitle`} to="/">Reservations</Link>
+            </li>
+            <li>
+                <Link className={`${styles.a} link cardTitle`} to="/BookingPage">Order Online</Link>
+            </li>
+            <li>
+                <Link className={`${styles.a} link cardTitle`} to="/">Login</Link>
+            </li>
             </ul>
         </div>
         <div>

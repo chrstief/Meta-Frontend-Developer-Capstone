@@ -1,8 +1,10 @@
-.footer {
+.grid {
     display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 150px;
-}
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 
 .ul {
     list-style: none;

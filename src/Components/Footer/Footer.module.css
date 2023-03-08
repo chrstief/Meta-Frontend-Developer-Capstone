@@ -1,16 +1,11 @@
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
-.flexbox{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
+  
 .ul {
   list-style: none;
 }

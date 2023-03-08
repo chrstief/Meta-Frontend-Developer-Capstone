@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className={`container paragraphText ${styles.flexbox}`}>
+    <footer className={`container paragraphText ${styles.grid}`}>
         <img  className={styles.logoLarge} src={logoLarge} alt='Logo'/>
         <div>
             <ul className={styles.ul}>

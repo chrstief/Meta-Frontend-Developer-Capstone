@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import styles from './BookingForm.module.css';
 
-export default function BookingForm() {
+export default function BookingForm({availableTimes,dispatchAvailableTimes}) {
   const [formData, setFormData] = useState({
     resDate: '',
     resTime: '17:00',
@@ -30,7 +30,10 @@ export default function BookingForm() {
         id="res-date"
         name="resDate"
         value={formData.resDate}
-        onChange={handleChange}
+        onChange={(event)=>{
+            handleChange(event)
+            dispatchAvailableTimes({type:event.target.value})
+        }}
       />
       <label htmlFor="res-time">Choose time</label>
       <select
@@ -39,12 +42,7 @@ export default function BookingForm() {
         value={formData.resTime}
         onChange={handleChange}
       >
-        <option value="17:00">17:00</option>
-        <option value="18:00">18:00</option>
-        <option value="19:00">19:00</option>
-        <option value="20:00">20:00</option>
-        <option value="21:00">21:00</option>
-        <option value="22:00">22:00</option>
+        {availableTimes.map((availableTime)=><option key={availableTime} value={availableTime}>{availableTime}</option>)}
       </select>
       <label htmlFor="guests">Number of guests</label>
       <input

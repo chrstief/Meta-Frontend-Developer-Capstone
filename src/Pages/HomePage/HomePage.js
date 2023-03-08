@@ -1,4 +1,4 @@
-import styles from './HomePage.module.css';
+import styles from '../Page.module.css';
 import Footer from '../../Components/Footer/Footer';
 import Header from '../../Components/Header/Header';
 import Main from '../../Components/Main/Main';

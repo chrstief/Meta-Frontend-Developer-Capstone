@@ -3,7 +3,7 @@ import styles from './BookingForm.module.css';
 
 export default function BookingForm({availableTimes,dispatchAvailableTimes}) {
   const [formData, setFormData] = useState({
-    resDate: '',
+    resDate: new Date().toISOString().substr(0, 10),
     resTime: '17:00',
     guests: '1',
     occasion: 'Birthday'

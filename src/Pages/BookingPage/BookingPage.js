@@ -4,36 +4,20 @@ import Header from '../../Components/Header/Header';
 import Nav from '../../Components/Nav/Nav';
 import BookingForm from '../../Components/BookingForm/BookingForm';
 import { useReducer } from 'react';
+import {fetchAPI} from "../../api";
 
 export default function BookingPage() {
-  const initialTimes =[
-    "17:00",
-    "18:00",
-    "19:00",
-    "20:00",
-    "21:00",
-    "22:00"
-  ]
+
   const [availableTimes, dispatchAvailableTimes] = useReducer(
     updateTimes,
-    initialTimes
+    initializeTimes()
   );
-  function updateTimes (availableTimes, action) {
-    switch (action.type) {
-      case "2023-03-13": {
-        return [
-          "17:00",
-          "18:00",
-          "19:00",
-          "20:00",
-          "21:00",
-          "22:00"
-        ];
-      }
-      default: {
-        return [];
-      }
-    }
+  function initializeTimes(){
+    const today = new Date();
+    return fetchAPI(today);
+  }
+  function updateTimes (availableTimes,action) {
+    return fetchAPI(new Date(action.type))
   }
   return (
     <div className={styles.app}>

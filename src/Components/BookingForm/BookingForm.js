@@ -4,9 +4,9 @@ import styles from './BookingForm.module.css';
 export default function BookingForm({availableTimes,dispatchAvailableTimes,submitForm}) {
   const [formData, setFormData] = useState({
     resDate: new Date().toISOString().substr(0, 10),
-    resTime: '17:00',
+    resTime: '',
     guests: '1',
-    occasion: 'Birthday'
+    occasion: 'No special occasion'
   });
 
   const handleChange = (event) => {
@@ -42,12 +42,15 @@ export default function BookingForm({availableTimes,dispatchAvailableTimes,submi
         value={formData.resTime}
         onChange={handleChange}
       >
-        {availableTimes.map((availableTime)=><option key={availableTime} value={availableTime}>{availableTime}</option>)}
+        {availableTimes.map((availableTime) => (
+          <option key={availableTime} value={availableTime}>
+            {availableTime}
+          </option>
+        ))}
       </select>
       <label htmlFor="guests">Number of guests</label>
       <input
         type="number"
-        placeholder="1"
         min="1"
         max="10"
         id="guests"
@@ -62,10 +65,11 @@ export default function BookingForm({availableTimes,dispatchAvailableTimes,submi
         value={formData.occasion}
         onChange={handleChange}
       >
+        <option selected value="No special occasion">No special occasion</option>
         <option value="Birthday">Birthday</option>
         <option value="Anniversary">Anniversary</option>
       </select>
-      <input type="submit" value="Make Your reservation" />
+      <input type="submit" value="Make Your reservation"/>
     </form>
   );
 }

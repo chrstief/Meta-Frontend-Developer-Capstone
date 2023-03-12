@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import styles from './BookingForm.module.css';
 
-export default function BookingForm({availableTimes,dispatchAvailableTimes}) {
+export default function BookingForm({availableTimes,dispatchAvailableTimes,submitForm}) {
   const [formData, setFormData] = useState({
     resDate: new Date().toISOString().substr(0, 10),
     resTime: '17:00',
@@ -16,7 +16,7 @@ export default function BookingForm({availableTimes,dispatchAvailableTimes}) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(formData); // Do something with the form data here
+    submitForm(formData);
   };
 
   return (

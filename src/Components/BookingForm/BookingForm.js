@@ -20,27 +20,34 @@ export default function BookingForm({availableTimes,dispatchAvailableTimes,submi
   };
 
   return (
-    <form
-      style={{ display: 'grid', maxWidth: '200px', gap: '20px' }}
-      onSubmit={handleSubmit}
-    >
-      <label htmlFor="res-date">Choose date</label>
+    <div className={styles.heroBackground}>
+      <h1 className={`displayTitle ${styles.heading}`}>Reservations</h1>
+    <form className={styles.container} onSubmit={handleSubmit}>
+      <label htmlFor="res-date" className="highlightText">
+        Choose a date:
+      </label>
       <input
         type="date"
         id="res-date"
         name="resDate"
         value={formData.resDate}
-        onChange={(event)=>{
-            handleChange(event)
-            dispatchAvailableTimes({type:event.target.value})
+        onChange={(event) => {
+          handleChange(event);
+          dispatchAvailableTimes({ type: event.target.value });
         }}
+        className={`paragraphText ${`paragraphText ${styles.input}`}`}
+        required
       />
-      <label htmlFor="res-time">Choose time</label>
+      <label htmlFor="res-time" className="highlightText">
+        Choose a time:
+      </label>
       <select
         id="res-time"
         name="resTime"
         value={formData.resTime}
         onChange={handleChange}
+        className={`paragraphText ${styles.input}`}
+        required
       >
         {availableTimes.map((availableTime) => (
           <option key={availableTime} value={availableTime}>
@@ -48,7 +55,9 @@ export default function BookingForm({availableTimes,dispatchAvailableTimes,submi
           </option>
         ))}
       </select>
-      <label htmlFor="guests">Number of guests</label>
+      <label htmlFor="guests" className="highlightText">
+        Number of guests:
+      </label>
       <input
         type="number"
         min="1"
@@ -57,19 +66,27 @@ export default function BookingForm({availableTimes,dispatchAvailableTimes,submi
         name="guests"
         value={formData.guests}
         onChange={handleChange}
+        className={`paragraphText ${styles.input}`}
+        required
       />
-      <label htmlFor="occasion">Occasion</label>
+      <label htmlFor="occasion" className="highlightText">
+        Occasion:
+      </label>
       <select
         id="occasion"
         name="occasion"
         value={formData.occasion}
         onChange={handleChange}
+        className={`paragraphText ${styles.input}`}
       >
-        <option selected value="No special occasion">No special occasion</option>
+        <option value="No special occasion">No special occasion</option>
         <option value="Birthday">Birthday</option>
         <option value="Anniversary">Anniversary</option>
       </select>
-      <input type="submit" value="Make Your reservation"/>
+      <button type="submit" className={`${styles.button} cardTitle`}>
+        Make Your reservation
+      </button>
     </form>
+    </div>
   );
 }

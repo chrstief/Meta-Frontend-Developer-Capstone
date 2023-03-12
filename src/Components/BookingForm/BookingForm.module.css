@@ -1,0 +1,38 @@
+
+.container {
+    display: grid;
+    max-width: 400px;
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    background-color: var(--secondary-color-grey);
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+  
+  .input {
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: var(--border-radius);
+    border: 1px solid #ccc;
+    background-color: white;
+  }
+  
+  .button {
+    border:none;
+    cursor: pointer;
+    border-radius:var(--border-radius);
+    background-color:var(--primary-color-yellow);
+    padding: .5em 1em;
+    
+  }
+
+  .heroBackground {
+    width: 100%;
+    background-color: var(--primary-color-green);
+  }
+
+  .heading {
+    text-align: center;
+    color: var(--primary-color-yellow);
+  }

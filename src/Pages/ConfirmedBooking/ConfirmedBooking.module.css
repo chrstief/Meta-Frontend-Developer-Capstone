@@ -1,0 +1,9 @@
+.heroBackground {
+    height: 400px;
+    width: 100%;
+    background-color: var(--primary-color-green);
+    color: var(--primary-color-yellow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

@@ -4,6 +4,8 @@ https://www.coursera.org/learn/meta-front-end-developer-capstone
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+npm run deploy for hosting on github pages
+
 ## Available Scripts
 
 In the project directory, you can run:

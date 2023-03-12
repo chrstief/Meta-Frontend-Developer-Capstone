@@ -6,20 +6,20 @@ import BookingForm from '../../Components/BookingForm/BookingForm';
 import { useReducer } from 'react';
 import {fetchAPI, submitAPI} from "../../api";
 import { useNavigate } from "react-router-dom";
-
+export function initializeTimes(){
+  const today = new Date();
+  return fetchAPI(today);
+}
+export function updateTimes (availableTimes,action) {
+  return fetchAPI(new Date(action.type))
+}
 export default function BookingPage() {
 
   const [availableTimes, dispatchAvailableTimes] = useReducer(
     updateTimes,
     initializeTimes()
   );
-  function initializeTimes(){
-    const today = new Date();
-    return fetchAPI(today);
-  }
-  function updateTimes (availableTimes,action) {
-    return fetchAPI(new Date(action.type))
-  }
+  
 
   const navigate = useNavigate();
   function submitForm(formData){

@@ -15,10 +15,10 @@ export default function Nav() {
                 <Link className={`${styles.a} link cardTitle`} to="/">Menu</Link>
             </li>
             <li>
-                <Link className={`${styles.a} link cardTitle`} to="/">Reservations</Link>
+                <Link className={`${styles.a} link cardTitle`} to="/BookingPage">Reservations</Link>
             </li>
             <li>
-                <Link className={`${styles.a} link cardTitle`} to="/BookingPage">Order Online</Link>
+                <Link className={`${styles.a} link cardTitle`} to="/">Order Online</Link>
             </li>
             <li>
                 <Link className={`${styles.a} link cardTitle`} to="/">Login</Link>
